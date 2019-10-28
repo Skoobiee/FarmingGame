@@ -1,15 +1,18 @@
-#define _WIN32_WINNT 0x0502
-#include <Windows.h>
 #include <iostream>
-
+#include "SDL.h"
 
 using namespace std;
 
-int main()
+int main(int argc, char *argv[])
 {
-	HWND hwnd = GetConsoleWindow();
-	if (hwnd != NULL) { SetWindowPos(hwnd, 0, 0, 0, 1000, 1000, SWP_SHOWWINDOW | SWP_NOMOVE); } //1800, 1300
-
+	//Creates the SDL window
+	SDL_Init(SDL_INIT_EVERYTHING);
+	SDL_Window *window = SDL_CreateWindow("Farm", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
+	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
+	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+	SDL_RenderClear(renderer);
+	SDL_RenderPresent(renderer);
+	//SDL_Delay(300);
 
 
 
