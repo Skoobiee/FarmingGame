@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 	SDL_RenderPresent(renderer);
 	//SDL_Delay(300);
 
-	
+	if (!IMG_Init(IMG_INIT_PNG) && IMG_INIT_PNG)
+	{
+		cout << "Failed to initialise PNG image" << endl;
+	}
 
 
 
