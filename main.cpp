@@ -6,6 +6,8 @@ int main(int argc, char *argv[])
 {
 	Game game;
 	//game.Start();
+
+
 	
 
 	//if (!IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)

@@ -2,7 +2,6 @@
 #include "SDL.h"
 #include "SDL_image.h"
 #include "SDL_ttf.h"
-#define _CSurface_H_
 
 class Game
 {

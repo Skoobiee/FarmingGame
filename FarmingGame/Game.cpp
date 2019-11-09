@@ -1,17 +1,13 @@
 #include "Game.h"
-#include <SDL_image.h>
-//#include <SDL_ttf.h>
+
 
 Game::Game()
 {
-	//Creates the SDL window
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_Window *window = SDL_CreateWindow("Farm", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
 	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
-	//SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
-	//SDL_Delay(300);
 
 	running = true;
 	count = 0;
@@ -38,15 +34,15 @@ void Game::GameLoop()
 			frameCount = 0;
 			count++;
 		}
-	}
 
-	Render();
-	Input();
-	Update();
+		Render();
+		Input();
+		Update();
 
-	if (count > 3)
-	{
-		running = false;
+		if (count > 3)
+		{
+			running = false;
+		}
 	}
 }
 
@@ -62,6 +58,8 @@ void Game::Input()
 
 void Game::Render()
 {
+	SDL_SetRenderDrawColor(m_Renderer, 0, 0, 0, 255);
+
 	frameCount++;
 	int TimerFPS = SDL_GetTicks() - lastFrame;
 	if (TimerFPS < (1000/60))
