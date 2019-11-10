@@ -6,6 +6,7 @@ Ores::Ores()
 
 
 	Update();
+	Draw();
 }
 
 Ores::~Ores()
@@ -15,9 +16,19 @@ Ores::~Ores()
 
 void Ores::Update()
 {
+	if (mining)
+	{
+		CollectOre();
+	}
 
 
+}
 
+void Ores::CollectOre()
+{
+
+
+	mining = false;
 }
 
 void Ores::Draw()

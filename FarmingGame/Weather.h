@@ -11,9 +11,9 @@ public:
 private:
 	void Update();
 	void Draw();
-	char rain, snow, sun, cloud, snowStorm;
+	bool sunny, cloudy, raining, snowing, snowStorm = false;
 
-	int weatherTypes[5] = { rain, snow, sun, cloud, snowStorm };
+	
 
 };
 
