@@ -1,8 +1,11 @@
 #include "Time.h"
 
+using namespace std;
 
 Time::Time()
 {
+	newDay = false;
+
 	day = 1;
 	season = 1;
 	year = 1;
@@ -11,6 +14,11 @@ Time::Time()
 	summer = false;
 	autumn = false;
 	winter = false;
+
+	timer = 0;
+	hourCount = 7;
+
+	Update();
 }
 
 Time::~Time()
@@ -19,6 +27,34 @@ Time::~Time()
 }
 
 void Time::Update()
+{
+	TimeOfDay();
+	Days();
+	Seasons();
+
+
+
+}
+
+void Time::TimeOfDay()
+{
+	timer = SDL_GetTicks();
+	cout << timer << endl;
+
+	if (timer >= 50) //7 seconds
+	{
+		timer = 0;
+		hourCount++;
+
+		if (hourCount >= 12) //change to 24 (full day)
+		{
+			newDay = true;
+			Days();
+		}
+	}
+}
+
+void Time::Days()
 {
 	if (newDay)
 	{
@@ -31,34 +67,40 @@ void Time::Update()
 
 			if (season > 4)
 			{
-				season = 1;
 				year++;
+				season = 1;
 			}
 		}
 	}
 
+	newDay = false;
+}
+
+void Time::Seasons()
+{
 	switch (season)
 	{
-		season = 1;
-		spring = true;
-		break;
-
-		season = 2;
+	case 2:
 		summer = true;
 		break;
 
-		season = 3;
+	case 3:
 		autumn = true;
 		break;
 
-		season = 4;
+	case 4:
 		winter = true;
 		break;
 
 	default:
+		spring = true;
 		break;
 	}
+}
 
-	
+void Time::Draw()
+{
+
+
 
 }
