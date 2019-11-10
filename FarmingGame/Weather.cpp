@@ -4,6 +4,9 @@
 Weather::Weather()
 {
 
+
+	Update();
+	Draw();
 }
 
 Weather::~Weather()
@@ -14,6 +17,8 @@ Weather::~Weather()
 void Weather::Update()
 {
 
+
+	
 }
 
 void Weather::Draw()

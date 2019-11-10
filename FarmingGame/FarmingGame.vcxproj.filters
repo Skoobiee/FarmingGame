@@ -27,6 +27,12 @@
     <ClCompile Include="Weather.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mining.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Weather.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mining.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ores.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

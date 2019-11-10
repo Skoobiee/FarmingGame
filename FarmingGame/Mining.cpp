@@ -13,20 +13,18 @@ Mining::~Mining()
 
 void Mining::Update()
 {
-	if (mining)
-	{
-		CollectOre();
-	}
-
-
-}
-
-void Mining::CollectOre()
-{
+	
 
 
 
 }
+
+//void Mining::CollectOre()
+//{
+//	
+//
+//
+//}
 
 void Mining::Draw()
 {

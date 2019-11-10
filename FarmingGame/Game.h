@@ -16,6 +16,7 @@ private:
 	void Update();
 	void Input();
 	void Render();
+	void HandleEvents();
 
 	bool running;
 	int count;

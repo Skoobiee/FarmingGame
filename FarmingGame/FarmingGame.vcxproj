@@ -123,11 +123,15 @@
   <ItemGroup>
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Mining.cpp" />
+    <ClCompile Include="Ores.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Weather.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Mining.h" />
+    <ClInclude Include="Ores.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Weather.h" />
   </ItemGroup>
