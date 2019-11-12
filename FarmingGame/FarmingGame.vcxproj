@@ -122,6 +122,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="Calender.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Mining.cpp" />
     <ClCompile Include="Ores.cpp" />
@@ -129,6 +130,7 @@
     <ClCompile Include="Weather.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calender.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Mining.h" />
     <ClInclude Include="Ores.h" />

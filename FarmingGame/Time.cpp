@@ -18,6 +18,8 @@ Time::Time()
 	timer = 0;
 	hourCount = 7;
 
+	lookAtCalender = false;
+
 	Update();
 }
 
@@ -45,7 +47,7 @@ void Time::TimeOfDay()
 	{
 		timer = 0;
 		hourCount++;
-
+		
 		if (hourCount >= 12) //change to 24 (full day)
 		{
 			newDay = true;
@@ -96,6 +98,18 @@ void Time::Seasons()
 		spring = true;
 		break;
 	}
+}
+
+void Time::Calender()
+{
+	if (lookAtCalender)
+	{
+
+	}
+
+
+
+
 }
 
 void Time::Draw()

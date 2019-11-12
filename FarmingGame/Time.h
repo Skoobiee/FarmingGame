@@ -16,16 +16,21 @@ protected:
 	virtual void Days();
 	virtual void Seasons();
 
+	int day, year;
+	int season;
+	bool newDay;
+
 private:
 	void TimeOfDay();
+	void Calender();
+
+	bool lookAtCalender;
 
 	int timer;
 	int hourCount;
 
 	bool morning, afternoon, evening, night;
-	int day, year;
-	int season;
-	bool newDay;
+	
 
 	bool spring, summer, autumn, winter;
 

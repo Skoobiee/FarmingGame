@@ -33,6 +33,9 @@
     <ClCompile Include="Ores.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Calender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
