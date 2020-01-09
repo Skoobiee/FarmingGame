@@ -124,6 +124,7 @@
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="Calender.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Mining.cpp" />
     <ClCompile Include="Ores.cpp" />
     <ClCompile Include="Time.cpp" />
@@ -132,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Calender.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Inventory.h" />
     <ClInclude Include="Mining.h" />
     <ClInclude Include="Ores.h" />
     <ClInclude Include="Time.h" />
